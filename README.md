@@ -3,6 +3,7 @@
 In this project, an approach to protecting virtual machines (VMs) against denial of service (DoS) attacks in a cloud environment is proposed. An open source cloud computing platform (Eucalyptus) has been deployed, and experimentation was carried out on this setup. We investigate attacks emanating from one or more virtual machines (VMs) to another VM in a multi-tenancy cloud environment. Various types of DoS attacks are mounted on a webserver VM. To detect such attacks from a cloud provider's perspective, an intrusion detection system (IDS) is needed. In this research we propose and implement an IDS which incorporates a packet sniffer, feature extractor and a classifier as part of its design. We have experimented with the one-class support vector machines (SVM) algorithm for classification of the attacks. The dataset containing time-based traffic flow features is passed through the classifier to detect the attack traffic from legitimate traffic. The proposed IDS design shows promising results in being able to detect the ICMP Flood, Ping-of-Death, UDP Flood, TCP SYN Flood, TCP LAND and DNS Flood attacks with high classification accuracies.
 
 # Dataset
+
     Feature  Shortname	Feature description
 
 f1	TCP_Count	Number of occurrence for an incoming IP w.r.t TCP
@@ -52,3 +53,5 @@ f22	Avg_ICMP_Bytes_Out	Average bytes sent to the incoming IP w.r.t ICMP
 f23	Other_Bytes_Out	Bytes sent to the incoming IP w.r.t other protocols
 
 f24	Avg_Other_Bytes_Out	Average bytes sent to the incoming IP w.r.t to other protocols
+
+	A label “1” indicates that instance is malicious while a label “-1” indicates that the instance in legitimate.
