@@ -4,8 +4,8 @@ In this project, an approach to protecting virtual machines (VMs) against denial
 
 # Dataset
 No. Feature  Shortname	Feature description
-f1	TCP_Count	Number of occurrence for an incoming IP w.r.t TCP
 
+f1	TCP_Count	Number of occurrence for an incoming IP w.r.t TCP
 f2	Avg_TCP_Count	Average number of occurrence for an incoming IP  w.r.t TCP
 
 f3	UDP_Count	Number of occurrence for an incoming IP w.r.t UDP
