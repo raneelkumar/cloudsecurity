@@ -54,4 +54,4 @@ f23	Other_Bytes_Out	Bytes sent to the incoming IP w.r.t other protocols
 
 f24	Avg_Other_Bytes_Out	Average bytes sent to the incoming IP w.r.t to other protocols
 
-	A label “1” indicates that instance is malicious while a label “-1” indicates that the instance in legitimate.
+	A label “1” indicates that the instance is malicious while a label “-1” indicates that the instance in legitimate.
